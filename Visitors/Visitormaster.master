@@ -1,0 +1,211 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void btnlogin_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void btnsignup_Click(object sender, EventArgs e)
+    {
+
+    }
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 10%;
+            font-family: "Microsoft JhengHei UI";
+            font-size: medium;
+        }
+        .style2
+        {
+            width: 100%;
+            height: 50;
+        }
+        .style3
+        {
+            width: 100%;
+            height: 100%;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table align="center" class="style1" style="border: thin solid #008000" 
+            cellpadding="3" cellspacing="0">
+            <tr>
+                <td style="" align="center">
+                   <table cellpadding="0" cellspacing="0" 
+                        class="style2">
+                        <tr>
+                            <td valign="top">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:Image ID="Image1" runat="server" Height="104px" 
+                                    ImageUrl="~/Images 2/762a3f11bfada1d74e7d88d4fe581f0e_092620.jpg" 
+                                    Width="239px" />
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="Button1" 
+                                    runat="server" AccessKey="p" BackColor="White" BorderStyle="None" 
+                                    ForeColor="White" PostBackUrl="~/Admin/AdminLogin.aspx" Text="p" />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                            </td>
+                            <td align="right">
+                                <table align="center" cellpadding="0" cellspacing="0" class="style3">
+                                    <tr>
+                                        <td rowspan="3">
+                                            <asp:Image ID="Image2" runat="server" Height="20px" 
+                                                ImageUrl="~/Images/location.png" />
+                                        &nbsp;
+                                        </td>
+                                        <td style="text-align: left; font-weight: 700; font-size: medium;">
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left; font-weight: 700; font-size: medium;">
+                                            Our Location</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left; color: #000066">
+                                            08,Shivaji Housing Society,Guruwar Peth,Madhavnagar,Sangli</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td align="right">
+                                <table align="center" cellpadding="0" cellspacing="0" class="style3">
+                                    <tr>
+                                        <td rowspan="3">
+                                            <asp:Image ID="Image3" runat="server" Height="20px" 
+                                                ImageUrl="~/Images/time.png" />
+                                        &nbsp;
+                                        </td>
+                                        <td style="text-align: left; font-weight: 700; font-size: medium;">
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left; font-weight: 700; font-size: medium;">
+                                            Our Time</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left; color: #000066">
+                                            10.00 am-8.00 pm</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td align="right">
+                                <table align="center" cellpadding="0" cellspacing="0" class="style3">
+                                    <tr>
+                                        <td rowspan="2">
+                                            <asp:Image ID="Image4" runat="server" Height="20px" 
+                                                ImageUrl="~/Images/call.png" />
+                                        &nbsp;
+                                        </td>
+                                        <td style="text-align: left; font-weight: 700; font-size: medium;">
+                                            Call Us On</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left; color: #000066">
+                                            8766484845<br />
+                                            9561485927</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                   </td>
+            </tr>
+           
+            <tr>
+                <td style="background-color: #800000" align="center">
+
+                <table width="100%" align="center"><tr><td align="right">
+                    &nbsp;</td><td>
+                    <asp:Menu ID="Menu1" runat="server" 
+                        Orientation="Horizontal" RenderingMode="Table" Width="100%" 
+                        StaticSubMenuIndent="16px" ForeColor="White" Height="28px" 
+                        
+                        
+                        style="text-align: center; color: #00BB8C; font-family: 'Franklin Gothic Demi'; background-color: #800000">
+                        <DynamicMenuItemStyle BackColor="Maroon" HorizontalPadding="15px" 
+                            VerticalPadding="2px" />
+                        <Items>
+                            <asp:MenuItem Text=" Home" Value=" Home"  ImageUrl="../Images/p1.png" 
+                                NavigateUrl="~/Visitors/Home.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text=" About" Value=" About" NavigateUrl="~/Visitors/About.aspx" 
+                                ImageUrl="../Images/p4.png"></asp:MenuItem>
+                            <asp:MenuItem Text=" Care Tips" Value="Care Tips" 
+                                NavigateUrl="~/Visitors/Caretips.aspx" ImageUrl="~/Images/p3.png"></asp:MenuItem>
+                            <asp:MenuItem Text=" Services" Value="Service" 
+                                NavigateUrl="~/Visitors/Service.aspx" ImageUrl="../Images/p2.png"></asp:MenuItem>
+                            <asp:MenuItem Text=" Our team" Value="Doctor our team" 
+                                NavigateUrl="~/Visitors/Doctor.aspx" ImageUrl="~/Images/p6.png"></asp:MenuItem>
+                            <asp:MenuItem Text=" Pet store" Value="Pet store" 
+                                NavigateUrl="~/Visitors/Pet store.aspx" ImageUrl="../Images/p7.png">
+                                <asp:MenuItem NavigateUrl="~/Visitors/Dog Food.aspx" Text="Dog Food" 
+                                    Value="Dog Food"></asp:MenuItem>
+                                <asp:MenuItem Text="Cat Food" Value="Cat Food" 
+                                    NavigateUrl="~/Visitors/Cat Food.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Bird Food" Value="Bird Food" 
+                                    NavigateUrl="~/Visitors/Bird Food.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Fish Food" Value="Fish Food" 
+                                    NavigateUrl="~/Visitors/Fish Food.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Brush" Value="Brush" 
+                                    NavigateUrl="~/Visitors/Brush Product.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Toys" Value="Toys" 
+                                    NavigateUrl="~/Visitors/Toys Product.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text=" Appointment" Value="Appointment" 
+                                NavigateUrl="~/Visitors/Appointment.aspx" ImageUrl="~/Images/p8.png"></asp:MenuItem>
+                            <asp:MenuItem Text=" Contact" Value="Contact" 
+                                NavigateUrl="~/Visitors/Contact.aspx" ImageUrl="../Images/p5.png"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Visitors/Login.aspx" Text="Login" Value="Login">
+                            </asp:MenuItem>
+                        </Items>
+                        <StaticMenuItemStyle HorizontalPadding="5px" />
+                        <StaticItemTemplate>
+                            <%# Eval("Text") %>
+                        </StaticItemTemplate>
+                    </asp:Menu></td></tr></table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <marquee direction="right" scrollamount="3" 
+                        style="background-color: #E2E2E2; font-weight: 700;"><asp:Button ID="Button2" runat="server" Text="a" AccessKey="a" BorderStyle="None" PostBackUrl="~/Admin/AdminLogin.aspx" ForeColor="White"></asp:Button>
+                    <table cellpadding="0" cellspacing="0"><tr><td>Project By:Rohan Desai & Varadraj Dabhade</td>
+                    <td>
+                    
+                    <asp:Image ID="Image5" runat="server" Height="40" ImageUrl="~/Images/dog1.gif" Width="80"></asp:Image>
+                    
+                    </td></tr></table></marquee>
+                    </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
