@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+    protected void Menu2_MenuItemClick(object sender, MenuEventArgs e)
+    {
+
+    }
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="text-align: center">
+        <table align="center" cellpadding="4" class="style1" 
+            style="border: thin solid #000000">
+            <tr>
+                <td style="text-align: left">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:Image ID="Image1" runat="server" Height="104px" 
+                                    
+                        ImageUrl="~/Images 2/762a3f11bfada1d74e7d88d4fe581f0e_092620.jpg" 
+                        Width="239px" />
+                         &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Menu ID="Menu2" runat="server" onmenuitemclick="Menu2_MenuItemClick" 
+                        BackColor="#990000" ForeColor="White" Orientation="Horizontal" 
+                        RenderingMode="Table" Width="100%" Height="28px" StaticSubMenuIndent="16px">
+
+                         
+                        <DynamicMenuItemStyle BackColor="Maroon" HorizontalPadding="15px" 
+                            VerticalPadding="2px" />
+      
+                          <Items>
+                            <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Patient/Home.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Product" Value="Product" 
+                                NavigateUrl="~/Patient/productlist.aspx">
+                                <asp:MenuItem Text="Dog Food" Value="Dog Food" 
+                                    NavigateUrl="~/Patient/dogfood.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Cat Food" Value="Cat Food" 
+                                    NavigateUrl="~/Patient/catfood.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Bird Food" Value="Bird Food" 
+                                    NavigateUrl="~/Patient/birdfood.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Fish Food" Value="Fish Food" 
+                                    NavigateUrl="~/Patient/fishfood.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Brush" Value="Brush" NavigateUrl="~/Patient/brushpro.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Toys" Value="Toys" NavigateUrl="~/Patient/Toypro.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                              <asp:MenuItem NavigateUrl="~/Patient/Cart_details.aspx" Text="Cart" 
+                                  Value="Cart">
+                              </asp:MenuItem>
+                            <asp:MenuItem Text="My Order" Value="My Order" 
+                                NavigateUrl="~/Patient/MyOrder.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Appointment" Value="Appointment" 
+                                NavigateUrl="~/Patient/Appointment.aspx"></asp:MenuItem>
+                              <asp:MenuItem Text="Cancle Order" Value="Cancle Order" 
+                                  NavigateUrl="~/Patient/Cancleorder.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Profile" Value="Profile" 
+                                NavigateUrl="~/Patient/Profile.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Feedback" Value="Feedback" 
+                                NavigateUrl="~/Patient/Feedback.aspx"></asp:MenuItem>
+                              <asp:MenuItem NavigateUrl="~/Visitors/Home.aspx" Text="Log Out" Value="Log Out">
+                              </asp:MenuItem>
+                        </Items>
+                        <StaticItemTemplate>
+                            <%# Eval("Text") %>
+                        </StaticItemTemplate>
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <marquee direction="right" scrollamount="3" 
+                        style="background-color: #E2E2E2; font-weight: 700; ">
+                    <table cellpadding="0" cellspacing="0"><tr><td>Project By:Rohan Desai & Varadraj Dabhade</td>
+                    <td>
+                    
+                    <asp:Image ID="Image5" runat="server" Height="40" ImageUrl="~/Images/dog1.gif" Width="80"></asp:Image>
+                    
+                    </td></tr></table></marquee></td>
+            </tr>
+            </table>
+    </div>
+    </form>
+</body>
+</html>
