@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+    protected void Menu1_MenuItemClick(object sender, MenuEventArgs e)
+    {
+
+    }
+
+    protected void Menu1_MenuItemClick1(object sender, MenuEventArgs e)
+    {
+
+    }
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 10%;
+        }
+        .style2
+        {
+            height: 91px;
+            text-align: left;
+            font-weight: 700;
+            font-size: large;
+        }
+        .style3
+        {
+            height: 91px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="font-family: 'Microsoft JhengHei UI'; font-size: medium">
+        <table align="center" cellpadding="2" class="style1" 
+            style="border: thin solid #000000">
+            <tr>
+                <td class="style2" align="center">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:Image ID="Image1" runat="server" Height="106px" 
+                                    
+                        ImageUrl="~/Images 2/762a3f11bfada1d74e7d88d4fe581f0e_092620.jpg" 
+                        Width="240px" />
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                <td class="style2" align="center">
+                    <asp:Image ID="Image2" runat="server" Height="50px" 
+                        ImageUrl="~/Images/clinic-icon.png" Width="51px" />
+                </td>
+                <td align="left" style="font-size: x-large; font-weight: 700" class="style3">
+                    <asp:Image ID="Image3" runat="server" Height="150px" 
+                        ImageUrl="~/Images 2/images (2)_094342.jpeg" style="margin-left: 0px" 
+                        Width="286px" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <asp:Menu ID="Menu1" runat="server" BackColor="Silver" BorderStyle="None" 
+                        ForeColor="White" Orientation="Horizontal" RenderingMode="Table" 
+                        Width="100%" Height="30px" 
+                        style="color: #FFFFFF; text-align: center; background-color: #800000">
+                        <DynamicMenuStyle BackColor="Maroon" HorizontalPadding="10px" 
+                            VerticalPadding="5px" />
+                        <Items>
+                            <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Admin/Home.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Add Product" Value="Add Product" 
+                                NavigateUrl="~/Admin/Add Product.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Add Doctor" Value="Add Doctor" 
+                                NavigateUrl="~/Admin/Add Doctor.aspx"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/ManageOrder.aspx" Text="Manage Order" 
+                                Value="Manage Order"></asp:MenuItem>
+                            <asp:MenuItem Text="View" Value="View Feedback">
+                                <asp:MenuItem NavigateUrl="~/Admin/View Feedback.aspx" Text="Feedback" 
+                                    Value="Feedback"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Admin/View Appointment.aspx" Text="Appointments" 
+                                    Value="Appointments"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Report" Value="Report" NavigateUrl="~/Admin/Report.aspx">
+                                <asp:MenuItem NavigateUrl="~/Report/Appointment.aspx" Text="Appointment" 
+                                    Value="Appointment"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Report/Contact.aspx" Text="Contact" 
+                                    Value="Contact"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Report/Feedback.aspx" Text="Feedback" 
+                                    Value="Feedback"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Report/Doctor.aspx" Text="Doctor" 
+                                    Value="Doctor"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Report/Product.aspx" Text="Product" 
+                                    Value="Product"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Report/RegistrationReport.aspx" 
+                                    Text="Registration" Value="Registration"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Log Out" Value="Log Out" NavigateUrl="~/Visitors/Home.aspx"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <marquee direction="right" scrollamount="3" 
+                        style="background-color: #E2E2E2; font-weight: 700;">
+                    <table cellpadding="0" cellspacing="0"><tr><td>Project By:Rohan Desai & Varadraj Dabhade</td>
+                    <td>
+                    
+                    <asp:Image ID="Image5" runat="server" Height="40" ImageUrl="~/Images/dog1.gif" Width="80"></asp:Image>
+                    
+                    </td></tr></table></marquee>
+                    </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
